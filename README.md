@@ -1,1 +1,1 @@
-# 36104_AT2_PartA_S2_C
+# 36104 Assignment 2 Part A Session 2-C Streamlit Application
