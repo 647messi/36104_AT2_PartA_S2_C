@@ -39,6 +39,13 @@ st.markdown("### AppStar")
 
 alt.data_transformers.disable_max_rows()
 
+lz = st.slider(
+    "log10 metallicity",
+    -4.0,
+    -1.4,
+    -1.7,
+    step=0.05
+)
 Z = 0.02          # metallicity; extension: make this a slider
 zr = Z / 0.02
 
@@ -141,7 +148,7 @@ for lm in lms:
             colour, px = "rgb(16,16,16)", 40.0
         elif phase == "neutron star":
             colour, px = "#CDE7FF", 6.0
-        elif phase == "supernova":
+        elif phase in ["supernova", "pair-instability supernova"]:
             colour, px = "#FFD27D", 150.0
         else:
             colour = rgb_str(T)
