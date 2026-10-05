@@ -231,7 +231,7 @@ HY = alt.Y(
     title="luminosity (suns), log scale",
     scale=alt.Scale(
         type="log",
-        domain=[1e-4, 1e6]
+        domain=[1e-5, 1e6]
     )
 )
 
@@ -256,7 +256,8 @@ you_hr = (
         size=280,
         color="#FFC300",
         stroke="#8C6A2F",
-        strokeWidth=1.2
+        strokeWidth=1.2,
+        clip=True
     )
     .encode(
         x=HX,
