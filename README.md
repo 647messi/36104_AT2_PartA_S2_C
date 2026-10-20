@@ -124,3 +124,15 @@ that visitors can use it without signing in.
 For each assignment, save its deployed app URL alone in a plain text file
 such as `submission.txt`, then upload that file to Canvas. Use the actual
 Community Cloud app URL, rather than the GitHub repository or tutorial demo URL.
+
+## Gold dashboard · Session 3
+
+The gold dashboard is self-contained in `gold_dashboard/`.
+
+```sh
+cd gold_dashboard
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
+```
+
+See [the dashboard README](gold_dashboard/README.md) for details and deployment.
